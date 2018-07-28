@@ -10,7 +10,7 @@ export default class List extends Component {
 		
 		if ( this.props.loading ) {
 			return <div className='app-loader'>
-				<img alt='spinner' src='/spinner.svg'/>
+				<img alt='spinner' src='./spinner.svg'/>
 				<div>loading results...</div>
 			</div>;
 		}

@@ -10,7 +10,7 @@ export default class Card extends Component {
 			<div className="app-heroes-card-text">
 				<div className="app-heroes-card-title">{hero.name}</div>
 				<div className="app-heroes-card-saved" onClick={this.props.onToggleBookmark.bind(this, hero)}>
-					<img alt='bookmark' src={"/" + (hero.bookmark ? 'bookmarked' : 'bookmark') + ".svg"}></img>
+					<img alt='bookmark' src={"./" + (hero.bookmark ? 'bookmarked' : 'bookmark') + ".svg"}></img>
 				</div>
 			</div>
 		</div>);
