@@ -1,0 +1,2 @@
+//KEEP SECRET
+export const MARVEL_KEY = '9d27b99b30de1d4e17077c34dd61df5b';
