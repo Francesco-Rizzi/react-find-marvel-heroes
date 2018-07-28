@@ -17,8 +17,7 @@
 - React ⚛️
 - Redux 🔃
 - [Redux-Observable](https://redux-observable.js.org/)
-- CSS
-- Babel
-- Webpack
-- Yarn 🐈
+- CSS-Grid
+- Jest
+- Enzyme
 - Created with [react-create-app](https://github.com/facebookincubator/create-react-app).

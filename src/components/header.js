@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-import {connect} from "react-redux";
 
-import {fetchHeroesByQuery, fetchHeroesByBookmark} from "../actions/actions";
-
-class Header extends Component {
+export default class Header extends Component {
 	
 	constructor( props ){
 		super(props);
@@ -16,8 +13,8 @@ class Header extends Component {
 	
 	render(){
 		return (<div className='app-header'>
-			<h1>React Find Marvel Heroes ⚛💥👊</h1>
-			<h2>Search, view and bookmark your favorite <a href='https://www.marvel.com/' target='_blank'>Marvel</a> Heroes.</h2>
+			<h1>React Find Marvel Heroes <span role='img' aria-label="emojis">⚛💥👊</span></h1>
+			<h2>Search, view and bookmark your favorite <a href='https://www.marvel.com/' rel="noopener noreferrer" target='_blank'>Marvel</a> Heroes.</h2>
 			<input type='text' placeholder='Type your favorite Hero...' value={this.state.query} onChange={this.handleChange.bind(this)} />
 		</div>);
 	}
@@ -41,9 +38,3 @@ class Header extends Component {
 	}
 	
 }
-
-
-export default connect(null, {
-	fetchHeroesByQuery,
-	fetchHeroesByBookmark
-})(Header);
